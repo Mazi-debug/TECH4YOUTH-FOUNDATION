@@ -1,24 +1,26 @@
-
+    
 body {
     background-color: #cfe0ef;
 }
 
 ul.nav {
+    text-align: center;
     list-style-type: none;              
     margin: 0;                      
     padding: 0;                   
-    background: linear-gradient(90deg, #000000, #000000); 
+    background: linear-gradient(90deg, #fff200, #fff200); 
     overflow: hidden;                     
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
 ul.nav li {
-    display: inline-block;             
+    display: inline-block;  
+    text-align: center;           
 }
 
 ul.nav li a {
     display: block;                    
-    color: #ff0000;                   
+    color: #000000;                   
     text-decoration: none;
     padding: 14px 20px;                 
     font-weight: bold;                     
@@ -26,24 +28,50 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-    background-color: #ff0000;           
+    background-color: #001aff;           
     color: #000000;                          
     border-radius: 8px;                   
 }
 
-h1, h2 {
-    margin: 20px 0;                       
+h1, h2,h3 {
+    margin: 20px 0; 
+    background: linear-gradient(90deg, #fff200, #fff200);
+    overflow: hidden; 
+    text-align: center;                     
     color: #000000;                      
     font-family: 'Palatino Linotype', serif; 
 }
 
 p {
     font-size: 18px;                      
-    margin: 15px 0;                       
-    color: #ff0000;                       
+    margin: 15px 0;
+    background-color: #2d7868;                       
+    color: #000000;                       
 }
 
 a {
-    color: #ff0000;                         
+    color: #010000;                         
     text-decoration: none;                  
+}
+
+@media (max-width: 37.5em) {
+   /* 600px  (mobile) */
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+.card h2 {
+    font-size: 1rem; /* smaller title on mobile , relative units. Typography adjustment  */
+  }
+  .card p {
+    font-size: 0.875rem; /* smaller description */
+  }
+  .card {
+        padding: 1rem; /* reduced padding for smaller screens */
+    }
+  .card button {
+    padding: 0.5rem 0.625rem; /* slightly smaller button */
+    font-size: 0.875rem;
+  }
+
 }
