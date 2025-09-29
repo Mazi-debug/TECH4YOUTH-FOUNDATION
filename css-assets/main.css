@@ -23,78 +23,80 @@
 */
 
 body {
-    background-color: #cfe0ef;
+    background-color: #cfe0ef; /* Light blue background for the whole page */
 }
 
 ul.nav {
-    text-align: center;
-    list-style-type: none;              
-    margin: 0;                      
-    padding: 0;                   
-    background: linear-gradient(90deg, #fff200, #fff200); 
-    overflow: hidden;                     
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    text-align: center; /* Center all nav items */
+    list-style-type: none; /* Remove default bullet points */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+    background: linear-gradient(90deg, #fff200, #fff200); /* Yellow gradient background */
+    overflow: hidden; /* Prevent overflow if items are too wide */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow under navbar */
 }
 
 ul.nav li {
-    display: inline-block;  
-    text-align: center;           
+    display: inline-block; /* Place nav items next to each other */
+    text-align: center; /* Center the text inside each item */
 }
 
 ul.nav li a {
-    display: block;                    
-    color: #000000;                   
-    text-decoration: none;
-    padding: 14px 20px;                 
-    font-weight: bold;                     
-    transition: background-color 0.3s, color 0.3s; 
+    display: block; /* Make links take up full clickable block */
+    color: #000000; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    padding: 14px 20px; /* Space around each link */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
 
 ul.nav li a:hover {
-    background-color: #001aff;           
-    color: #000000;                          
-    border-radius: 8px;                   
+    background-color: #001aff; /* Blue background when hovering */
+    color: #000000; /* Keep text black */
+    border-radius: 8px; /* Rounded corners on hover */
 }
 
-h1, h2,h3 {
-    margin: 20px 0; 
-    background: linear-gradient(90deg, #fff200, #fff200);
-    overflow: hidden; 
-    text-align: center;                     
-    color: #000000;                      
-    font-family: 'Palatino Linotype', serif; 
+h1, h2, h3 {
+    margin: 20px 0; /* Space above and below */
+    background: linear-gradient(90deg, #fff200, #fff200); /* Yellow gradient behind text */
+    overflow: hidden; /* Prevent layout issues with background */
+    text-align: center; /* Center headings */
+    color: #000000; /* Black text */
+    font-family: 'Palatino Linotype', serif; /* Stylish serif font */
 }
 
 p {
-    font-size: 18px;                      
-    margin: 15px 0;
-    background-color: #2d7868;                       
-    color: #000000;                       
+    font-size: 18px; /* Readable font size */
+    margin: 15px 0; /* Space above and below paragraphs */
+    background-color: #2d7868; /* Green background */
+    color: #000000; /* Black text */
 }
 
 a {
-    color: #010000;                         
-    text-decoration: none;                  
+    color: #010000; /* Very dark text color */
+    text-decoration: none; /* Remove underline */
 }
 
-@media (max-width: 37.5em) {
-   /* 600px  (mobile) */
+@media (max-width: 37.5em) { /* 37.5em = 600px */
+  
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout on small screens */
   }
 
-.card h2 {
-    font-size: 1rem; /* smaller title on mobile , relative units. Typography adjustment  */
+  .card h2 {
+    font-size: 1rem; /* Smaller heading size for cards */
   }
+
   .card p {
-    font-size: 0.875rem; /* smaller description */
-  }
-  .card {
-        padding: 1rem; /* reduced padding for smaller screens */
-    }
-  .card button {
-    padding: 0.5rem 0.625rem; /* slightly smaller button */
-    font-size: 0.875rem;
+    font-size: 0.875rem; /* Smaller text for card descriptions */
   }
 
+  .card {
+    padding: 1rem; /* Reduce card padding for mobile */
+  }
+
+  .card button {
+    padding: 0.5rem 0.625rem; /* Smaller button size */
+    font-size: 0.875rem; /* Smaller button text */
+  }
 }
