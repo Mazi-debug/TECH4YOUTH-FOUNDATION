@@ -23,11 +23,14 @@
 */
 
 body {
-    background-color: #cfe0ef; /* Light blue background for the whole page */
-    background-image: url("_images/homepage1.jpg"); /* Replace with your image path */
-                background-repeat: no-repeat; /* Prevents the image from repeating */
-                background-size: cover; /* Ensures the image covers the entire background */
-                background-position: center; /* Centers the image */
+    background-color: #dac8a3; /* Murky brown background for the whole page */
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 header, footer {
@@ -48,9 +51,10 @@ ul.nav {
     list-style-type: none; /* Remove default bullet points */
     margin: 0; /* Reset margins */
     padding: 0; /* Reset padding */
-    background: linear-gradient(90deg, #fff200, #fff200); /* Yellow gradient background */
+    background: linear-gradient(90deg, #ff9100, #ff9100); /* Orange gradient background */
     overflow: hidden; /* Prevent overflow if items are too wide */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow under navbar */
+    border-radius: 12px; /* Rounded corners */
 }
 
 ul.nav li {
@@ -68,16 +72,18 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-    background-color: #001aff; /* Blue background when hovering */
+    background-color: #70d7ff; /* Blue background when hovering */
     color: #000000; /* Keep text black */
     border-radius: 8px; /* Rounded corners on hover */
 }
 
 h1, h2, h3 {
     margin: 20px 0; /* Space above and below */
-    background: linear-gradient(90deg, #fff200, #fff200); /* Yellow gradient behind text */
+    background: linear-gradient(90deg, #ff9100, #ff9100); /* Orange gradient behind text */
     overflow: hidden; /* Prevent layout issues with background */
     text-align: center; /* Center headings */
+    border-radius: 12px; /* Rounded corners */
+    padding: 2px; /* Padding inside the heading */
     color: #000000; /* Black text */
     font-family: 'Palatino Linotype', serif; /* Stylish serif font */
 }
@@ -85,7 +91,7 @@ h1, h2, h3 {
 p {
     font-size: 18px; /* Readable font size */
     margin: 15px 0; /* Space above and below paragraphs */
-    background-color: #2d7868; /* Green background */
+    background-color: #ffffff; /* White background */
     color: #000000; /* Black text */
 }
 
