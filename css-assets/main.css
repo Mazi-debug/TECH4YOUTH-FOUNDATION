@@ -26,6 +26,19 @@ body {
     background-color: #cfe0ef; /* Light blue background for the whole page */
 }
 
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 ul.nav {
     text-align: center; /* Center all nav items */
     list-style-type: none; /* Remove default bullet points */
