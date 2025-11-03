@@ -179,6 +179,17 @@ a {
   font-size: 18px;
 }
 
+/* Search */
+#searchBox {
+  margin: auto;
+  width: 97.5%;
+  padding: 8px;
+
+  border-radius: 12px; /* Rounded corners */
+}
+
+/* Responsive Design */
+
 @media (max-width: 37.5em) { /* 37.5em = 600px */
   
   .container {

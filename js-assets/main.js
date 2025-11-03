@@ -41,3 +41,14 @@ lightbox.addEventListener("click", function(e) {
     lightbox.style.display = "none";
   }
 });
+
+// Search & Filtering
+document.getElementById("searchBox").addEventListener("keyup", function () {
+  let filter = this.value.toLowerCase();
+  let books = document.querySelectorAll("#bookList li");
+
+  books.forEach(i => {
+    let text = i.textContent.toLowerCase();
+    i.style.display = text.includes(filter) ? "block" : "none";
+  });
+});
