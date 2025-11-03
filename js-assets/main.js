@@ -52,3 +52,20 @@ document.getElementById("searchBox").addEventListener("keyup", function () {
     i.style.display = text.includes(filter) ? "block" : "none";
   });
 });
+
+// Form Validation
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  let name = document.getElementById("name").value.trim();
+  let email = document.getElementById("email").value.trim();
+  let message = document.getElementById("message").value.trim();
+  let feedback = document.getElementById("formFeedback");
+
+  if (name && email.includes("@") && message.length > 5) {
+    feedback.textContent = "Message sent successfully!";
+    feedback.style.color = "green";
+  } else {
+    feedback.textContent = "Please fill in all fields correctly.";
+    feedback.style.color = "red";
+  }
+});
