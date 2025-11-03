@@ -1,173 +1,194 @@
-<!-- CODE ATTRIBUTION -->
-<!-- TITLE: IIE Manual Manual 2025 -->
-<!-- AUTHOR: The Independent Institute of Education -->
-<!-- DATE: 09/02/2023 -->
-<!-- VERSION: FIRST EDITION: 2012 -->
-<!-- AVAILABLE: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/IIE%20Student%20Materials/New%20Student%20Materials%20CAT/WEDE5020/2025/Term%202/WEDE5020MM.docx?d=w2d7589e9374b43de9596ef35d83ebd02&csf=1&web=1&e=yok212-->
-<!-- DATE ACCESSED: 27/08/2025 -->
+<!-- Code Attribution
+   Author: The Independent Institute of Education (IIE)
+   Title: IIE Manual 2025
+   Date Published: 09/02/2023
+   Version: First Edition: 2012
+   Link/URL: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/IIE%20Student%20Materials/New%20Student%20Materials%20CAT/WEDE5020/2025/Term%202/WEDE5020MM.docx?d=w2d7589e9374b43de9596ef35d83ebd02&csf=1&web=1&e=yok212
+   Date Accessed: 27/08/2025
+-->
+
+<!-- Code Attribution
+   Author: World Wide Web Consortium (W3C)
+   Title: HTML5 Specification
+   Date Published: 2023
+   Link/URL: https://www.w3.org/TR/html52/
+   Date Accessed: 2025-09-29
+-->
+
+<!-- Code Attribution
+   Author: Mozilla Developer Network (MDN) Contributors
+   Title: HTML: HyperText Markup Language Guide
+   Date Published: 2024
+   Link/URL: https://developer.mozilla.org/en-US/docs/Web/HTML
+   Date Accessed: 2025-09-29
+-->
 
 <!DOCTYPE html>
 <!-- Declares the document type as HTML5 -->
 <html lang="en">
   <!-- Sets the document language to English -->
   <head>
-    <!-- Defines metadata for the document -->
     <meta charset="UTF-8" />
-    <!-- Specifies the character encoding as UTF-8 for universal compatibility -->
+    <!-- Specifies UTF-8 encoding for global character compatibility -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Ensures responsive design for various devices -->
+    <!-- Ensures responsive design on all devices -->
     <title>Enquiries - Tech4Youth Foundation</title>
-    <!-- Sets the page title displayed in the browser tab -->
+    <!-- Displays page title in browser tab -->
     <link rel="stylesheet" href="css-assets/main.css" />
+    <!-- Links to external CSS file for styling -->
   </head>
+
   <body>
-    <!-- Header section containing the site title and navigation -->
+    <!-- ===== HEADER SECTION ===== -->
     <header>
       <h1>Tech4Youth Foundation</h1>
-      <!-- Main heading for the organization name -->
+      <!-- Displays organization title as main header -->
       <nav>
-        <!-- Navigation menu for site links -->
+        <!-- Navigation bar containing internal links -->
         <ul class="nav">
-          <!-- Unordered list for navigation links -->
+          <!-- Unordered list used for navigation items -->
           <li><a href="index.html">Home</a></li>
-          <!-- Link to the home page -->
+          <!-- Link to the homepage -->
           <li><a href="about.html">About</a></li>
           <!-- Link to the about page -->
           <li><a href="services.html">Services</a></li>
           <!-- Link to the services page -->
           <li><a href="enquires.html" class="active">Enquiries</a></li>
-          <!-- Link to the enquiries page, marked as active -->
+          <!-- Link to the enquiries page (active) -->
           <li><a href="contacts.html">Contact</a></li>
           <!-- Link to the contact page -->
         </ul>
       </nav>
     </header>
 
-    <!-- Main content section of the page -->
+    <!-- ===== MAIN CONTENT SECTION ===== -->
     <main>
+      <!-- === Enquiries Introduction Section === -->
       <section>
         <h2>Enquiries</h2>
-        <!-- Subheading for the enquiries section -->
+        <!-- Page subheading introducing the section -->
         <img
           src="_images/enquiry2.jpeg"
           alt="Tech4Youth Foundation Enquiries"
           width="500"
         />
-        <!-- Image representing the enquiries -->
+        <!-- Representative image for enquiries -->
         <p>
           Whether you are a student interested in joining our programs, a
           company seeking to sponsor, or a volunteer eager to make a difference
           — we'd love to hear from you!
         </p>
-        <!-- Paragraph inviting users to submit enquiries -->
+        <!-- Short introduction encouraging visitors to make contact -->
       </section>
 
+      <!-- === Types of Enquiries Section === -->
       <section>
         <h3>Types of Enquiries</h3>
-        <!-- Subheading for types of enquiries -->
+        <!-- Subheading listing enquiry categories -->
         <ul>
-          <!-- Unordered list of enquiry categories -->
+          <!-- Unordered list of enquiry options -->
           <li>
-            <strong>General</strong> - Ask about our programs or organisation.
+            <strong>General</strong> – Ask about our programs or organization.
           </li>
-          <!-- General enquiry description -->
+          <!-- General enquiry -->
           <li>
-            <strong>Student Sign-Up</strong> - Register for digital skills
+            <strong>Student Sign-Up</strong> – Register for digital skills
             training or coding workshops.
           </li>
-          <!-- Student sign-up enquiry description -->
+          <!-- Student registration enquiry -->
           <li>
-            <strong>Partnerships</strong> - Collaborate with us as a school,
+            <strong>Partnerships</strong> – Collaborate with us as a school,
             NGO, or corporate sponsor.
           </li>
-          <!-- Partnerships enquiry description -->
+          <!-- Partnership opportunities -->
           <li>
-            <strong>Volunteering</strong> - Mentor students, assist at events,
+            <strong>Volunteering</strong> – Mentor students, assist at events,
             or help with outreach.
           </li>
-          <!-- Volunteering enquiry description -->
+          <!-- Volunteering information -->
           <li>
-            <strong>Donations</strong> - Support us financially to expand our
+            <strong>Donations</strong> – Support us financially to expand our
             reach.
           </li>
-          <!-- Donations enquiry description -->
+          <!-- Donation enquiries -->
         </ul>
       </section>
 
+      <!-- === Enquiry Submission Form Section === -->
       <section>
         <h3>Submit Your Enquiry</h3>
-        <!-- Subheading for the enquiry form -->
+        <!-- Form subheading -->
         <form id="contactForm">
-          <!-- Form for submitting enquiries -->
+          <!-- Enquiry submission form begins -->
           <label for="name">Your Name:</label><br />
-          <!-- Label for the name input field -->
+          <!-- Label for name input -->
           <input type="text" id="name" name="name" required /><br /><br />
-          <!-- Text input for user's name, marked as required -->
+          <!-- Text input for user’s name (required) -->
 
           <label for="email">Your Email:</label><br />
-          <!-- Label for the email input field -->
+          <!-- Label for email input -->
           <input type="email" id="email" name="email" required /><br /><br />
-          <!-- Email input for user's email, marked as required -->
+          <!-- Email input for user contact (required) -->
 
           <label for="category">Enquiry Type:</label><br />
-          <!-- Label for the enquiry type dropdown -->
+          <!-- Label for dropdown menu -->
           <select id="category" name="category">
             <!-- Dropdown menu for selecting enquiry type -->
             <option>General</option>
-            <!-- Option for general enquiry -->
             <option>Student Sign-Up</option>
-            <!-- Option for student sign-up -->
             <option>Partnerships</option>
-            <!-- Option for partnerships -->
             <option>Volunteering</option>
-            <!-- Option for volunteering -->
             <option>Donations</option>
-            <!-- Option for donations --></select
-          ><br /><br />
+          </select>
+          <br /><br />
 
           <label for="message">Message:</label><br />
-          <!-- Label for the message textarea -->
-          <textarea id="message" name="message" rows="5" required></textarea
-          ><br /><br />
-          <!-- Textarea for user's message, marked as required -->
+          <!-- Label for enquiry message -->
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <!-- Text area for message (required) -->
+          <br /><br />
 
           <button type="submit">Submit Enquiry</button>
-          <!-- Submit button for the form -->
+          <!-- Form submission button -->
         </form>
+
         <div id="formFeedback"></div>
-        <!--displays success or error messages after submission using JavaScript.-->
+        <!-- Displays success or error feedback via JavaScript -->
       </section>
 
+      <!-- === FAQ Section === -->
       <section>
         <h3>FAQs</h3>
-        <!-- Subheading for frequently asked questions -->
+        <!-- Subheading introducing frequently asked questions -->
         <button class="accordion-btn">Tap to show</button>
+        <!-- Button to toggle FAQ visibility -->
         <div class="accordion-content">
           <p>
             <strong>Q: Do I need prior computer knowledge?</strong><br />
             A: No, our beginner programs are designed for students with no prior
             experience.
           </p>
-          <!-- FAQ about prior computer knowledge requirement -->
-
+          <!-- FAQ regarding computer knowledge -->
           <p>
             <strong>Q: How much does training cost?</strong><br />
             A: All our student programs are free, thanks to the generosity of
             donors and sponsors.
           </p>
-          <!-- FAQ about training costs -->
+          <!-- FAQ regarding program costs -->
         </div>
       </section>
     </main>
 
-    <!-- Footer section with copyright information -->
+    <!-- ===== FOOTER SECTION ===== -->
     <footer>
       <hr />
-      <!-- Horizontal rule for visual separation -->
+      <!-- Horizontal divider for layout balance -->
       <p><small>© 2025 Tech4Youth Foundation. All rights reserved.</small></p>
-      <!-- Copyright notice for the organization -->
+      <!-- Copyright -->
     </footer>
 
+    <!-- ===== JAVASCRIPT SECTION ===== -->
     <script src="js-assets/main.js"></script>
+    <!-- External JavaScript file for interactivity -->
   </body>
 </html>

@@ -22,141 +22,173 @@
    Date Accessed: 2025-09-29
 */
 
+/* ===============================
+   GLOBAL STYLES
+   =============================== */
 body {
-    background-color: #dac8a3; /* Murky brown background for the whole page */
+    background-color: #dac8a3; /* Sets a soft, warm brown background for the entire page */
 }
 
+/* Makes all images responsive and centered */
 img {
-    display: block;
-    margin: 0 auto 20px auto; /* Center the image and add bottom margin */
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes inline spacing and allows centering */
+    margin: 0 auto 20px auto; /* Centers image horizontally and adds bottom spacing */
+    max-width: 100%; /* Ensures image doesn't overflow its container */
+    height: auto; /* Maintains correct aspect ratio */
 }
 
+/* ===============================
+   HEADER & FOOTER
+   =============================== */
 header, footer {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; /* Centers all text within header and footer */
+  margin-bottom: 20px; /* Adds vertical space below these sections */
 }
 
+/* ===============================
+   MAIN SECTIONS
+   =============================== */
 section {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  margin-bottom: 20px;
+  background: #fff; /* White background for contrast */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle depth */
+  padding: 20px; /* Internal spacing */
+  margin-bottom: 20px; /* Space between sections */
 }
 
+/* ===============================
+   NAVIGATION BAR
+   =============================== */
 ul.nav {
-    text-align: center; /* Center all nav items */
-    list-style-type: none; /* Remove default bullet points */
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
-    background: linear-gradient(90deg, #ff9100, #ff9100); /* Orange gradient background */
-    overflow: hidden; /* Prevent overflow if items are too wide */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow under navbar */
-    border-radius: 12px; /* Rounded corners */
+    text-align: center; /* Centers navigation items */
+    list-style-type: none; /* Removes default bullets */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background: linear-gradient(90deg, #ff9100, #ff9100); /* Bright orange gradient */
+    overflow: hidden; /* Ensures child items don’t overflow */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds soft drop shadow */
+    border-radius: 12px; /* Rounded corners for a modern look */
 }
 
+/* Styles for each navigation item */
 ul.nav li {
-    display: inline-block; /* Place nav items next to each other */
-    text-align: center; /* Center the text inside each item */
+    display: inline-block; /* Aligns items horizontally */
+    text-align: center; /* Centers text within item */
 }
 
+/* Link styling within navigation */
 ul.nav li a {
-    display: block; /* Make links take up full clickable block */
-    color: #000000; /* Black text color */
-    text-decoration: none; /* Remove underline */
-    padding: 14px 20px; /* Space around each link */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+    display: block; /* Makes the link clickable across the whole area */
+    color: #000000; /* Black text for readability */
+    text-decoration: none; /* Removes underline */
+    padding: 14px 20px; /* Adds comfortable clickable padding */
+    font-weight: bold; /* Emphasizes navigation text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover animation */
 }
 
+/* Hover effect for navigation links */
 ul.nav li a:hover {
-    background-color: #dba39a; /* Brown background when hovering */
-    color: #000000; /* Keep text black */
-    border-radius: 8px; /* Rounded corners on hover */
+    background-color: #dba39a; /* Soft brown hover background */
+    color: #000000; /* Keeps text black */
+    border-radius: 8px; /* Slightly rounds the link on hover */
 }
 
+/* ===============================
+   HEADINGS & TEXT
+   =============================== */
 h1, h2, h3 {
-    margin: 20px 0; /* Space above and below */
-    background: linear-gradient(90deg, #ff9100, #ff9100); /* Orange gradient behind text */
-    overflow: hidden; /* Prevent layout issues with background */
-    text-align: center; /* Center headings */
-    border-radius: 12px; /* Rounded corners */
-    padding: 2px; /* Padding inside the heading */
-    color: #000000; /* Black text */
-    font-family: 'Palatino Linotype', serif; /* Stylish serif font */
+    margin: 20px 0; /* Adds vertical spacing */
+    background: linear-gradient(90deg, #ff9100, #ff9100); /* Orange gradient background */
+    overflow: hidden; /* Prevents layout issues */
+    text-align: center; /* Centers all headings */
+    border-radius: 12px; /* Rounded background edges */
+    padding: 2px; /* Slight padding for visual comfort */
+    color: #000000; /* Black text for contrast */
+    font-family: 'Palatino Linotype', serif; /* Classic, readable serif font */
 }
 
+/* General paragraph styling */
 p {
-    font-size: 18px; /* Readable font size */
+    font-size: 18px; /* Easy-to-read size */
     padding: 10px;
-    margin: 15px 0; /* Space above and below paragraphs */
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
+    margin: 15px 0; /* Space between paragraphs */
+    background-color: #ffffff; /* Clean white background */
+    color: #000000; /* Black text for high readability */
 }
 
+/* Link styling outside of navigation */
 a {
     color: #010000; /* Very dark text color */
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; /* No underlines for a cleaner look */
 }
 
-/* Accordion */
+/* ===============================
+   ACCORDION COMPONENT
+   =============================== */
 .accordion-btn {
-  width: 100%;
-  text-align: center;
+  width: 100%; /* Button spans full width */
+  text-align: center; /* Centers text */
   padding: 10px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  border: none; /* Removes default border */
+  outline: none; /* Removes focus outline */
+  cursor: pointer; /* Pointer cursor on hover */
   font-weight: bold;
-  background: #dba39a;
+  background: #dba39a; /* Brown button background */
   border-radius: 12px; /* Rounded corners */
   color: white;
-  margin-top: 5px;
+  margin-top: 5px; /* Space between buttons */
 }
 
+/* Hidden content panel that expands when the accordion is active */
 .accordion-content {
-  display: none;
+  display: none; /* Hidden by default */
   padding: 10px;
-  background: #f3e5d0;
-  border-radius: 0 0 8px 8px;
+  background: #f3e5d0; /* Light tan background */
+  border-radius: 0 0 8px 8px; /* Rounded bottom corners */
 }
 
-/* Gallery */
+/* ===============================
+   IMAGE GALLERY
+   =============================== */
 .gallery {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  display: flex; /* Enables flexible grid layout */
+  gap: 15px; /* Space between images */
+  flex-wrap: wrap; /* Wraps images to next line if necessary */
 }
 
+/* Thumbnail image styling */
 .gallery img {
   width: 150px;
   height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  border-radius: 8px; /* Rounded image corners */
+  cursor: pointer; /* Makes thumbnails clickable */
+  transition: 0.3s; /* Smooth hover zoom */
 }
 
+/* Hover zoom effect for gallery images */
 .gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
+/* ===============================
+   LIGHTBOX OVERLAY
+   =============================== */
 .lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 60px;
+  display: none; /* Hidden until activated */
+  position: fixed; /* Stays in place when scrolling */
+  z-index: 999; /* Appears above all other elements */
+  padding-top: 60px; /* Adds top spacing */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-  text-align: center;
+  overflow: auto; /* Allows scrolling if content overflows */
+  background-color: rgba(0,0,0,0.9); /* Dark semi-transparent overlay */
+  text-align: center; /* Centers the image */
 }
 
+/* Lightbox image container */
 .lightbox-content {
   margin: auto;
   display: block;
@@ -164,6 +196,7 @@ a {
   max-height: 80%;
 }
 
+/* Close button styling */
 .close {
   position: absolute;
   top: 20px;
@@ -171,50 +204,58 @@ a {
   font-size: 40px;
   font-weight: bold;
   color: white;
-  cursor: pointer;
+  cursor: pointer; /* Indicates clickability */
 }
+
+/* Caption under lightbox image */
 .caption {
   margin-top: 15px;
-  color: #f1f1f1;
+  color: #f1f1f1; /* Light gray text */
   font-size: 18px;
 }
 
-/* Search */
+/* ===============================
+   SEARCH BOX
+   =============================== */
 #searchBox {
-  margin: auto;
-  width: 97.5%;
+  margin: auto; /* Centers search box */
+  width: 97.5%; /* Nearly full width */
   padding: 8px;
-
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 12px; /* Smooth edges */
 }
 
-/*form*/
+/* ===============================
+   CONTACT FORM
+   =============================== */
 form label {
-  display: block;
+  display: block; /* Each label on a new line */
   margin-bottom: 10px;
   font-weight: 500;
 }
 
+/* Input and textarea styling */
 form input[type="text"],
 form input[type="email"],
 form textarea {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* Subtle gray border */
   margin-top: 5px;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
+/* Allows textarea resizing vertically */
 form textarea {
   resize: vertical;
   min-height: 80px;
 }
 
+/* Submit button styling */
 form button[type="submit"] {
   margin-top: 10px;
-  background-color: #dba39a;
+  background-color: #dba39a; /* Matches site palette */
   color: white;
   border: none;
   padding: 10px 15px;
@@ -222,28 +263,29 @@ form button[type="submit"] {
   cursor: pointer;
 }
 
-/* Responsive Design */
-
-@media (max-width: 37.5em) { /* 37.5em = 600px */
+/* ===============================
+   RESPONSIVE DESIGN (MOBILE)
+   =============================== */
+@media (max-width: 37.5em) { /* 37.5em = 600px breakpoint */
   
   .container {
-    grid-template-columns: 1fr; /* Single column layout on small screens */
+    grid-template-columns: 1fr; /* Switch to single column on mobile */
   }
 
   .card h2 {
-    font-size: 1rem; /* Smaller heading size for cards */
+    font-size: 1rem; /* Smaller card headings */
   }
 
   .card p {
-    font-size: 0.875rem; /* Smaller text for card descriptions */
+    font-size: 0.875rem; /* Compact paragraph text */
   }
 
   .card {
-    padding: 1rem; /* Reduce card padding for mobile */
+    padding: 1rem; /* Reduced padding for smaller screens */
   }
 
   .card button {
-    padding: 0.5rem 0.625rem; /* Smaller button size */
-    font-size: 0.875rem; /* Smaller button text */
+    padding: 0.5rem 0.625rem; /* Smaller buttons */
+    font-size: 0.875rem;
   }
 }
