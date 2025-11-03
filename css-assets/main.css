@@ -24,6 +24,10 @@
 
 body {
     background-color: #cfe0ef; /* Light blue background for the whole page */
+    background-image: url("_images/homepage1.jpg"); /* Replace with your image path */
+                background-repeat: no-repeat; /* Prevents the image from repeating */
+                background-size: cover; /* Ensures the image covers the entire background */
+                background-position: center; /* Centers the image */
 }
 
 header, footer {
